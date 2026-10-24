@@ -1,0 +1,100 @@
+#savaktija-switcharoo-dialog {
+  width: min(420px, calc(100vw - 32px));
+  max-width: none;
+  padding: 28px;
+  border: 0;
+  border-radius: 20px;
+  color: #173326;
+  background: #fff;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .28);
+  font-family: system-ui, sans-serif;
+}
+
+#savaktija-switcharoo-dialog::backdrop {
+  background: rgba(12, 24, 18, .58);
+  backdrop-filter: blur(3px);
+}
+
+#savaktija-switcharoo-dialog h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+#savaktija-switcharoo-dialog p {
+  margin: 0 0 24px;
+  color: #52645a;
+  line-height: 1.5;
+}
+
+#savaktija-switcharoo-dialog .savaktija-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+#savaktija-switcharoo-dialog button {
+  min-height: 42px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+#savaktija-switcharoo-dialog button:focus-visible {
+  outline: 3px solid #82c99c;
+  outline-offset: 3px;
+}
+
+#savaktija-switcharoo-dialog .savaktija-dialog-cancel {
+  color: #284437;
+  background: #edf3ef;
+}
+
+#savaktija-switcharoo-dialog .savaktija-dialog-start {
+  color: #fff;
+  background: #21834b;
+}
+
+#savaktija-switcharoo-dialog .savaktija-dialog-start:hover {
+  background: #176c3c;
+}
+
+.savaktija-cup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2147483647;
+  font-size: 48px;
+  line-height: 1;
+  pointer-events: none;
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, .3));
+}
+
+body.dark .savaktija-sunrise-card {
+  border-radius: 12px;
+  background-color: #f4f1e8;
+  color: #1e2227;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .16);
+}
+
+body.dark .savaktija-sunrise-card > .name,
+body.dark .savaktija-sunrise-card > .time,
+body.dark .savaktija-sunrise-card > .relative-time {
+  color: #1e2227 !important;
+}
+
+body:not(.dark) .savaktija-sunrise-card {
+  border-radius: 12px;
+  background-color: #252a30;
+  color: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .12);
+}
+
+body:not(.dark) .savaktija-sunrise-card > .name,
+body:not(.dark) .savaktija-sunrise-card > .time,
+body:not(.dark) .savaktija-sunrise-card > .relative-time {
+  color: #fff !important;
+}
