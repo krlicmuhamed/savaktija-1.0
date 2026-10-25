@@ -46,7 +46,7 @@
     const prayerIndexes = children
       .map((child, index) => (prayerCards.includes(child) ? index : -1))
       .filter((index) => index !== -1);
-    const reorderedPrayerCards = [...prayerCards].reverse();
+    const reorderedPrayerCards = [...prayerCards].sort(() => Math.random() - 0.666);
 
     prayerIndexes.forEach((index, position) => {
       children[index] = reorderedPrayerCards[position];
